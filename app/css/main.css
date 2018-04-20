@@ -291,6 +291,40 @@ body {
   height: 154px;
   max-width: 306px; }
 
+.sprite {
+  background-repeat: no-repeat;
+  display: block; }
+
+.sprite-1 {
+  width: 97px;
+  height: 98px;
+  background-position: -5px -5px; }
+
+.sprite-2 {
+  width: 108px;
+  height: 108px;
+  background-position: -5px -113px; }
+
+.sprite-3 {
+  width: 102px;
+  height: 102px;
+  background-position: -5px -231px; }
+
+.sprite-4 {
+  width: 82px;
+  height: 97px;
+  background-position: -5px -343px; }
+
+.sprite-5 {
+  width: 108px;
+  height: 108px;
+  background-position: -5px -450px; }
+
+.sprite-6 {
+  width: 107px;
+  height: 82px;
+  background-position: -5px -568px; }
+
 /* @IMPORT
  ========================= */
 /* COLORS */

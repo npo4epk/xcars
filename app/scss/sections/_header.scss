@@ -158,6 +158,31 @@
       display: block;
       @include list-clear();
     }
+
+    &__item {
+      position: relative;
+      display: block;
+      color: #ffffff;
+
+      span {
+        position: relative;
+        padding-left: 40px;
+
+        &:after {
+          @include pseudo(block, absolute, ' ');
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 10px;
+          border: 2px solid $color-d10c1d;
+          border-top-width: 0;
+          border-right-width: 0;
+          transform: rotate(-45deg);
+          background-color: transparent;
+          transition: opacity .3s,transform .3s;
+        }
+      }
+    }
   }
 
 }

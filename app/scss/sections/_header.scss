@@ -1,0 +1,164 @@
+/* @IMPORT */
+@import "../components/_variables";
+@import "../helpers/_mixins";
+
+.header {
+  position: relative;
+  display: block;
+  background: $color-2d3238 url('../img/header/img.jpg') no-repeat center;
+  height: 700px;
+  padding: 40px 0 100px 0;
+
+  &-block {
+    position: relative;
+    display: block;
+    height: 85px;
+    background-color: $color-ffffff;
+  }
+
+  &-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 85px;
+    min-height: 100%;
+  }
+
+  &-logo {
+    position: relative;
+    display: block;
+    top: 50px;
+
+    &__link {
+      position: relative;
+      display: block;
+    }
+
+    &__img {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &-menu {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @include list-clear();
+    }
+    
+    &__item {
+      position: relative;
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+    
+    &__link {
+      position: relative;
+      display: block;
+      font-family: $GothamPro-Medium;
+      @include rem(fs, $font-14, $font-18-overall);
+      @include rem(lh, $font-16, $font-18-overall);
+      padding: 0 10px 5px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-332512;
+      border-bottom: 3px solid transparent;
+      transition: all 1s;
+
+      &:hover {
+        border-bottom-color: $color-d10c1d;
+      }
+    }
+  }
+
+  &-tel {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @include list-clear();
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      font-family: $GothamPro-Medium;
+      @include rem(fs, $font-14, $font-18-overall);
+      @include rem(lh, $font-16, $font-18-overall);
+      padding: 0 10px 5px 10px;
+      text-decoration: none;
+      color: $color-332512;
+
+      &--bold {
+        @include rem(fs, $font-18, $font-18-overall);
+        @include rem(lh, $font-20, $font-18-overall);
+        color: $color-d10c1d;
+      }
+    }
+  }
+
+  &-info {
+    position: relative;
+    display: block;
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  &-info-title {
+    position: relative;
+    display: block;
+  }
+
+  &-title {
+    position: relative;
+    display: block;
+
+    &__text {
+      font-family: $GothamPro-Bold;
+      @include rem(fs, $font-55, $font-18-overall);
+      @include rem(lh, $font-65, $font-18-overall);
+      color: $color-ffffff;
+      margin: 0 0 50px 0;
+    }
+  }
+
+  &-list {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: block;
+      @include list-clear();
+    }
+  }
+
+}
+

@@ -1,0 +1,299 @@
+/* @IMPORT
+ ========================= */
+/* COLORS
+ ========================= */
+/* FONTS
+ ========================= */
+/* SIZES
+ ========================= */
+/* MEDIA SIZES
+ ========================= */
+/* FONTS-FACE
+ 	@include font-face('FontAwesome', '../fonts/FontAwesome/fontawesome-webfont', normal, normal, eot woff2 woff ttf svg);
+ ========================= */
+/* PX in REM
+ 	@include rem(lh, 12, 16);
+	@include rem(fs, 12, 16);
+ ========================= */
+/* PSEUDO
+	@include pseudo(block, absolute, ' ');
+ ========================= */
+/* CLEARFIX
+	@include clearfix()
+ ========================= */
+/* PLEACEHOLDER
+	@include placeholder(red, normal, none)
+ ========================= */
+/* LIST-CLEAR
+	@include list-clear()
+ ========================= */
+/* DEFAULT
+ ========================= */
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: "GothamPro", sans-serif;
+  font-size: 18; }
+
+body {
+  position: relative;
+  display: block;
+  font-family: "GothamPro", sans-serif;
+  font-size: 18px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.11111rem;
+  color: #0e1011;
+  background-color: #ffffff; }
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1640px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+/* @IMPORT
+ ========================= */
+/* @IMPORT
+ ========================= */
+/* COLORS
+ ========================= */
+/* FONTS
+ ========================= */
+/* SIZES
+ ========================= */
+/* MEDIA SIZES
+ ========================= */
+/* FONTS-FACE
+ 	@include font-face('FontAwesome', '../fonts/FontAwesome/fontawesome-webfont', normal, normal, eot woff2 woff ttf svg);
+ ========================= */
+/* PX in REM
+ 	@include rem(lh, 12, 16);
+	@include rem(fs, 12, 16);
+ ========================= */
+/* PSEUDO
+	@include pseudo(block, absolute, ' ');
+ ========================= */
+/* CLEARFIX
+	@include clearfix()
+ ========================= */
+/* PLEACEHOLDER
+	@include placeholder(red, normal, none)
+ ========================= */
+/* LIST-CLEAR
+	@include list-clear()
+ ========================= */
+.header {
+  position: relative;
+  display: block;
+  background: #2d3238 url("../img/header/img.jpg") no-repeat center;
+  height: 700px;
+  padding: 40px 0 100px 0; }
+  .header-block {
+    position: relative;
+    display: block;
+    height: 85px;
+    background-color: #ffffff; }
+  .header-wrapper {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 85px;
+    min-height: 100%; }
+  .header-logo {
+    position: relative;
+    display: block;
+    top: 50px; }
+    .header-logo__link {
+      position: relative;
+      display: block; }
+    .header-logo__img {
+      position: relative;
+      display: block; }
+  .header-menu {
+    position: relative;
+    display: block; }
+    .header-menu__list {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+    .header-menu__item {
+      position: relative;
+      display: block; }
+      .header-menu__item:not(:last-child) {
+        margin-right: 40px; }
+    .header-menu__link {
+      position: relative;
+      display: block;
+      font-family: "GothamPro-Medium", sans-serif;
+      font-size: 14px;
+      font-size: 0.77778rem;
+      line-height: 16px;
+      line-height: 0.88889rem;
+      padding: 0 10px 5px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #332512;
+      border-bottom: 3px solid transparent;
+      transition: all 1s; }
+      .header-menu__link:hover {
+        border-bottom-color: #d10c1d; }
+  .header-tel {
+    position: relative;
+    display: block; }
+    .header-tel__list {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+    .header-tel__item {
+      position: relative;
+      display: block; }
+      .header-tel__item:not(:last-child) {
+        margin-right: 40px; }
+    .header-tel__link {
+      position: relative;
+      display: block;
+      font-family: "GothamPro-Medium", sans-serif;
+      font-size: 14px;
+      font-size: 0.77778rem;
+      line-height: 16px;
+      line-height: 0.88889rem;
+      padding: 0 10px 5px 10px;
+      text-decoration: none;
+      color: #332512; }
+      .header-tel__link--bold {
+        font-size: 18px;
+        font-size: 1rem;
+        line-height: 20px;
+        line-height: 1.11111rem;
+        color: #d10c1d; }
+  .header-info {
+    position: relative;
+    display: block;
+    padding-top: 150px;
+    text-align: center; }
+  .header-info-title {
+    position: relative;
+    display: block; }
+  .header-title {
+    position: relative;
+    display: block; }
+    .header-title__text {
+      font-family: "GothamPro-Bold", sans-serif;
+      font-size: 55px;
+      font-size: 3.05556rem;
+      line-height: 65px;
+      line-height: 3.61111rem;
+      color: #ffffff;
+      margin: 0 0 50px 0; }
+  .header-list {
+    position: relative;
+    display: block; }
+    .header-list__list {
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+
+/* @IMPORT
+ ========================= */
+/* COLORS
+ ========================= */
+/* FONTS
+ ========================= */
+/* SIZES
+ ========================= */
+/* MEDIA SIZES
+ ========================= */
+/* FONTS-FACE
+ 	@include font-face('FontAwesome', '../fonts/FontAwesome/fontawesome-webfont', normal, normal, eot woff2 woff ttf svg);
+ ========================= */
+/* PX in REM
+ 	@include rem(lh, 12, 16);
+	@include rem(fs, 12, 16);
+ ========================= */
+/* PSEUDO
+	@include pseudo(block, absolute, ' ');
+ ========================= */
+/* CLEARFIX
+	@include clearfix()
+ ========================= */
+/* PLEACEHOLDER
+	@include placeholder(red, normal, none)
+ ========================= */
+/* LIST-CLEAR
+	@include list-clear()
+ ========================= */
+/* @IMPORT
+ ========================= */
+/* COLORS
+ ========================= */
+/* FONTS
+ ========================= */
+/* SIZES
+ ========================= */
+/* MEDIA SIZES
+ ========================= */
+/* FONTS-FACE
+ 	@include font-face('FontAwesome', '../fonts/FontAwesome/fontawesome-webfont', normal, normal, eot woff2 woff ttf svg);
+ ========================= */
+/* PX in REM
+ 	@include rem(lh, 12, 16);
+	@include rem(fs, 12, 16);
+ ========================= */
+/* PSEUDO
+	@include pseudo(block, absolute, ' ');
+ ========================= */
+/* CLEARFIX
+	@include clearfix()
+ ========================= */
+/* PLEACEHOLDER
+	@include placeholder(red, normal, none)
+ ========================= */
+/* LIST-CLEAR
+	@include list-clear()
+ ========================= */
+/* DESKTOP FIRST METHOD
+ ========================= */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/* MOBILE FIRST METHODD
+ ========================= */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

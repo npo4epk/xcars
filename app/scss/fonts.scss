@@ -1,0 +1,9 @@
+/* @IMPORT
+ ========================= */
+@import "helpers/_mixins";
+
+/* FONTS
+ ========================= */
+@include font-face('GothamPro', '../fonts/GothamPro/GothamPro', normal, normal, eot otf woff ttf svg);
+@include font-face('GothamPro-Bold', '../fonts/GothamPro-Bold/GothamPro-Bold', normal, normal, eot otf woff ttf svg);
+@include font-face('GothamPro-Medium', '../fonts/GothamPro-Medium/GothamPro-Medium', normal, normal, eot otf woff ttf svg);

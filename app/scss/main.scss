@@ -1,0 +1,42 @@
+/* @IMPORT
+ ========================= */
+@import "components/_variables";
+@import "helpers/_mixins";
+
+
+/* DEFAULT
+ ========================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $GothamPro;
+  font-size: $font-18;
+}
+
+body {
+  position: relative;
+  display: block;
+  font-family: $GothamPro;
+  @include rem(fs, $font-18, $font-18-overall);
+  @include rem(lh, $font-20, $font-18-overall);
+  color: $color-0e1011;
+  background-color: $color-ffffff;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1640px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* @IMPORT
+ ========================= */
+@import "sections/_header";
+@import "sections/_work";
+@import "sections/_footer";
+@import "helpers/_media";

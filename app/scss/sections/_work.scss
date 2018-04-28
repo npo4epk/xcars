@@ -7,80 +7,121 @@
   display: block;
   background-color: $color-ffffff;
   padding: 80px 0;
+
+  &-title {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__text {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-36, $font-18-overall);
+      @include rem(lh, $font-38, $font-18-overall);
+      font-weight: normal;
+      margin: 0;
+      color: $color-332512;
+    }
+  }
+
+  &-brands {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: block;
+      @include list-clear();
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+      background: transparent url('../img/work/bg.jpg') no-repeat center;
+      width: 100%;
+      height: 154px;
+    }
+
+    &__link {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      transition: all 0.5s;
+
+      $brands: manheim, copart, iaai, rbauction, npauctions;
+      @each $brand in $brands {
+        &--#{$brand} {
+          background-image: url('../img/work/#{$brand}.png');
+          background-repeat: no-repeat;
+          background-position: center 30%;
+
+        }
+      }
+
+      &:hover {
+        transform: scale(0.8);
+        filter: grayscale(100%) !important;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      @include rem(fs, $font-18, $font-18-overall);
+      @include rem(lh, $font-20, $font-18-overall);
+      text-align: center;
+      color: $color-ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  & .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: $color-878889;
+
+    & .owl-prev {
+      position: absolute;
+      top: 0;
+      left: 0;
+      outline: none !important;
+    }
+
+    & .owl-next {
+      position: absolute;
+      top: 0;
+      right: 0;
+      outline: none !important;
+    }
+  }
+
+  & .owl-dots {
+    display: none !important;
+  }
 }
 
-.work-carousel__item {
-  //width: 100%;
-  height:154px;
+@media only screen and (max-width : $size-700) {
 
-}
+  .work {
 
-.work-carousel__item {
-  position: relative;
-  display: block;
+    &-title {
 
+      &__text {
+        @include rem(fs, $font-26, $font-18-overall);
+        @include rem(lh, $font-36, $font-18-overall);
+      }
+    }
+  }
 
-}
-
-.work-carousel__link span {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: #ffffff;
-}
-
-.work-carousel__link {
-  position: relative;
-  display: block;
-  background:               url('../img/14.png') no-repeat center,
-  url('../img/12/12.jpg') no-repeat center;
-  width: 100%;
-  height:154px;
-  max-width: 306px;
-}
-
-
-// sprite
-.sprite {
-  //background-image: url(spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-}
-
-.sprite-1 {
-  width: 97px;
-  height: 98px;
-  background-position: -5px -5px;
-}
-
-.sprite-2 {
-  width: 108px;
-  height: 108px;
-  background-position: -5px -113px;
-}
-
-.sprite-3 {
-  width: 102px;
-  height: 102px;
-  background-position: -5px -231px;
-}
-
-.sprite-4 {
-  width: 82px;
-  height: 97px;
-  background-position: -5px -343px;
-}
-
-.sprite-5 {
-  width: 108px;
-  height: 108px;
-  background-position: -5px -450px;
-}
-
-.sprite-6 {
-  width: 107px;
-  height: 82px;
-  background-position: -5px -568px;
 }

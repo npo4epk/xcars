@@ -6,8 +6,8 @@
   position: relative;
   display: block;
   background: $color-2d3238 url('../img/header/img.jpg') no-repeat center;
-  height: 700px;
-  padding: 40px 0 100px 0;
+  max-height: 700px;
+  padding: 35px 0 50px 0;
 
   &-block {
     position: relative;
@@ -31,15 +31,76 @@
     position: relative;
     display: block;
     top: 50px;
+    transition: all 0.5s;
 
     &__link {
       position: relative;
       display: block;
+      width: 100%;
+      transition: all 0.5s;
     }
 
     &__img {
       position: relative;
       display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &-burger {
+    position: relative;
+    display: none;
+
+    &__btn {
+      font-size: 0;
+      width: 28px;
+      color: $color-0e1011;
+      cursor: pointer;
+      border: 0;
+      border-bottom: 4px solid $color-0e1011;
+      background: transparent;
+      outline: 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 100%;
+        border-bottom: 4px solid $color-0e1011;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 32px;
+      height: 32px;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        height: 33px;
+        width: 2px;
+        background-color: $color-ffffff;
+        transition: background-color 1s;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
     }
   }
 
@@ -91,19 +152,15 @@
     &__list {
       position: relative;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
       @include list-clear();
     }
 
     &__item {
       position: relative;
       display: block;
-
-      &:not(:last-child) {
-        margin-right: 40px;
-      }
     }
 
     &__link {
@@ -112,7 +169,6 @@
       font-family: $GothamPro-Medium;
       @include rem(fs, $font-14, $font-18-overall);
       @include rem(lh, $font-16, $font-18-overall);
-      padding: 0 10px 5px 10px;
       text-decoration: none;
       color: $color-332512;
 
@@ -152,11 +208,15 @@
   &-list {
     position: relative;
     display: block;
+    margin-bottom: 50px;
 
     &__list {
       position: relative;
       display: block;
       @include list-clear();
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
     }
 
     &__item {
@@ -164,8 +224,17 @@
       display: block;
       color: #ffffff;
 
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
       span {
         position: relative;
+        display: block;
+        font-family: $GothamPro-Medium;
+        @include rem(fs, $font-18, $font-18-overall);
+        @include rem(lh, $font-20, $font-18-overall);
+        font-weight: normal;
         padding-left: 40px;
 
         &:after {
@@ -185,5 +254,197 @@
     }
   }
 
+  &-call {
+    position: relative;
+    display: block;
+
+    &__link {
+      position: relative;
+      display: inline-block;
+      padding: 20px 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $color-ffffff;
+      background-color: $color-d10c1d;
+      border: 2px solid $color-d10c1d;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $color-d10c1d;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &-burger-menu {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background-image: linear-gradient(to top, #020403, #141719, #1e2123, #2f373e, #324049);
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999999;
+
+    .header-menu {
+      display: block;
+
+      &__list {
+        flex-direction: column;
+      }
+
+      &__item:not(:last-child) {
+        margin-bottom: 20px !important;
+      }
+      
+      &__link {
+        color: $color-ffffff;
+      }
+    }
+
+    .header-tel {
+      display: block;
+      margin-bottom: 50px;
+
+      &__list {
+        max-width: 175px;
+        margin: 0 auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      &__item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &__link {
+        color: $color-ffffff;
+      }
+    }
+  }
+
+  &-burger-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    overflow: auto;
+  }
+
+  &-item {
+    background-image: linear-gradient(to top, #020403, #141719, #1e2123, #2f373e, #324049);
+    max-height: 100%;
+
+    & .header-title__text {
+      display: inline-block;
+      @include rem(fs, $font-36, $font-18-overall);
+      @include rem(lh, $font-46, $font-18-overall);
+      margin-bottom: 20px;
+      border-bottom: 3px solid $color-d10c1d;
+    }
+
+    & .header-logo {
+      top: 30px;
+
+      &__link {
+        width: 200px;
+      }
+    }
+
+    & .header-info {
+      padding-top: 80px;
+    }
+
+    & .header-list {
+      margin: 0;
+
+      &__item span:after {
+        display: none;
+      }
+    }
+  }
 }
 
+@media only screen and (max-width : $size-1000) {
+
+  .header {
+    background-position: 70% 50%;
+
+    &-logo {
+      top: 30px;
+
+      &__link {
+        width: 200px;
+      }
+    }
+
+    &-menu {
+
+      &__item {
+        margin: 0 !important;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : $size-800) {
+
+  .header {
+
+    &-burger {
+      display: block;
+    }
+
+    &-menu {
+      display: none;
+    }
+
+    &-tel {
+      display: none;
+    }
+
+    &-title {
+
+      &__text {
+        @include rem(fs, $font-36, $font-18-overall);
+        @include rem(lh, $font-46, $font-18-overall);
+      }
+    }
+
+    &-list {
+
+      &__item  {
+
+        & span {
+          @include rem(fs, $font-14, $font-18-overall);
+          @include rem(lh, $font-16, $font-18-overall);
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width : $size-450) {
+
+  .header {
+
+    &-title {
+
+      &__text {
+        @include rem(fs, $font-26, $font-18-overall);
+        @include rem(lh, $font-38, $font-18-overall);
+      }
+    }
+  }
+
+}

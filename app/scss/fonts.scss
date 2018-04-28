@@ -7,3 +7,7 @@
 @include font-face('GothamPro', '../fonts/GothamPro/GothamPro', normal, normal, eot otf woff ttf svg);
 @include font-face('GothamPro-Bold', '../fonts/GothamPro-Bold/GothamPro-Bold', normal, normal, eot otf woff ttf svg);
 @include font-face('GothamPro-Medium', '../fonts/GothamPro-Medium/GothamPro-Medium', normal, normal, eot otf woff ttf svg);
+
+@include font-face('Font Awesome 5 Brands', '../fonts/webfonts/fa-brands-400', normal, normal, eot woff2 woff ttf svg);
+@include font-face('Font Awesome 5 Free', '../fonts/webfonts/fa-regular-400', 400, normal, eot woff2 woff ttf svg);
+@include font-face('Font Awesome 5 Free', '../fonts/webfonts/fa-solid-900', 900, normal, eot woff2 woff ttf svg);

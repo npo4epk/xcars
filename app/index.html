@@ -7,7 +7,7 @@
 		<meta charset="UTF-8">
 		<meta name="description" content="XCARS.by">
 		<meta name="keywords" content="XCARS.by">
-		<meta name="author" content="nekit-1989@mail.ru">
+		<meta name="author" content="XCARS.by">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="vendor/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="vendor/owl.carousel/dist/assets/owl.carousel.css" />
 		<!-- endbower -->
+		<link rel="stylesheet" href="vendor/fontAwesome/web-fonts-with-css/css/fontawesome-all.css" />
 		<!-- endbuild -->
 		
 		<!-- build:css css/fonts.min.css -->
@@ -43,20 +44,23 @@
 		      <div class="container">
 		         <div class="header-wrapper">
 		            <div class="header-logo">
-		               <a href="#" class="header-logo__link" title="xcars.by">
+		               <a href="index.html" class="header-logo__link" title="xcars.by">
 		                  <img src="img/header/logo.png" alt="xcars.by" class="header-logo__img">
 		               </a>
+		            </div>
+		            <div class="header-burger">
+		               <button id="header-burger-btn" class="header-burger__btn" title="Меню" >Меню</button>
 		            </div>
 		            <div class="header-menu">
 		               <ul class="header-menu__list">
 		                  <li class="header-menu__item">
-		                     <a href="#" class="header-menu__link" title="О компании">О компании</a>
+		                     <a href="about.html" class="header-menu__link" title="О компании">О компании</a>
 		                  </li>
 		                  <li class="header-menu__item">
-		                     <a href="#" class="header-menu__link" title="Наши работы">Наши работы</a>
+		                     <a href="list.html" class="header-menu__link" title="Наши работы">Наши работы</a>
 		                  </li>
 		                  <li class="header-menu__item">
-		                     <a href="#" class="header-menu__link" title="Контакты">Контакты</a>
+		                     <a href="contact.html" class="header-menu__link" title="Контакты">Контакты</a>
 		                  </li>
 		               </ul>
 		            </div>
@@ -80,7 +84,7 @@
 		      <div class="container">
 		         <div class="header-info-title">
 		         <div class="header-title">
-		            <h1 class="header-title__text">Доставка а/м и<br>техники из США и ЕС</h1>
+		            <h1 class="header-title__text">Доставка автомобилей и<br>спецтехники из США и ЕС</h1>
 		         </div>
 		         <div class="header-list">
 		            <ul class="header-list__list">
@@ -88,6 +92,9 @@
 		               <li class="header-list__item"><span>сопровождение сделок</span></li>
 		               <li class="header-list__item"><span>консультации</span></li>
 		            </ul>
+		         </div>
+		         <div class="header-call">
+		            <a href="#" data-scroll="footer" class="header-call__link" id="header-call-link" title="Свяаться с нами">Связаться с нами</a>
 		         </div>
 		      </div>
 		      </div>
@@ -99,28 +106,37 @@
 		        <div class="work-title">
 		            <h4 class="work-title__text">Работаем с самыми популярными аукционами</h4>
 		        </div>
-		        <div class="work-carousel">
-		            <ul class="work-carousel__list owl-carousel">
-		                <li class="work-carousel__item">
-		                    <a href="#" class="work-carousel__link"><span>copart.com</span></a>
+		        <div class="work-brands">
+		            <ul class="work-brands__list owl-carousel" id="work-brands-list">
+		                <li class="work-brands__item">
+		                    <a href="#" class="work-brands__link work-brands__link--manheim" title="manheim.com">
+		                        <span class="work-brands__text">manheim.com</span>
+		                    </a>
 		                </li>
-		                <li class="work-carousel__item">
-		                    <a href="#" class="work-carousel__link"><span>copart.com</span></a>
+		                <li class="work-brands__item">
+		                    <a href="#" class="work-brands__link work-brands__link--copart" title="copart.com">
+		                        <span class="work-brands__text">copart.com</span>
+		                    </a>
 		                </li>
-		                <li class="work-carousel__item">
-		                    <a href="#" class="work-carousel__link"><span>copart.com</span></a>
+		                <li class="work-brands__item">
+		                    <a href="#" class="work-brands__link work-brands__link--iaai" title="iaai.com">
+		                        <span class="work-brands__text">iaai.com</span>
+		                    </a>
 		                </li>
-		                <li class="work-carousel__item">
-		                    <a href="#" class="work-carousel__link"><span>copart.com</span></a>
+		                <li class="work-brands__item">
+		                    <a href="#" class="work-brands__link work-brands__link--rbauction" title="rbauction.com">
+		                        <span class="work-brands__text">rbauction.com</span>
+		                    </a>
 		                </li>
-		                <li class="work-carousel__item">
-		                    <a href="#" class="work-carousel__link"><span>copart.com</span></a>
+		                <li class="work-brands__item">
+		                    <a href="#" class="work-brands__link work-brands__link--npauctions" title="npauctions.com">
+		                        <span class="work-brands__text">npauctions.com</span>
+		                    </a>
 		                </li>
 		            </ul>
 		        </div>
 		    </div>
 		</div>
-		
 		
 		<div class="result">
 		    <div class="container">
@@ -129,14 +145,172 @@
 		        </div>
 		        <div class="result-list-block">
 		            <ul class="result-list-block__list">
-		                <li class="result-list-block__item">Полное сопровождение сделки</li>
-		                <li class="result-list-block__item">Полное сопровождение сделки</li>
-		                <li class="result-list-block__item">Полное сопровождение сделки</li>
+		                <li class="result-list-block__item result-list-block__item--maintenance">Полное сопровождение<br>сделки</li>
+		                <li class="result-list-block__item result-list-block__item--delivery">Доставка  в течение 45<br>суток после покупки</li>
+		                <li class="result-list-block__item result-list-block__item--transportation">Транспортировка одним<br>контейнером на всем пути<br>следования</li>
 		            </ul>
 		        </div>
 		    </div>
 		</div>
-
+		
+		<div class="about">
+		    <div class="container">
+		        <div class="about-title">
+		            <h3 class="about-title__text">«АвтоТехИмпорт»</h3>
+		        </div>
+		        <div class="about-description">
+		            <p class="about-description__text">ООО «АвтоТехИмпорт» является официальным дилером компании AutoЕxport LLC США на территории Республики Беларусь и Российской Федерации. Являемся одним из наиболее надежных поставщиков б/у автомобилей и мотоциклов из США и стран Европы.
+		            </p>
+		        </div>
+		        <div class="about-list-block">
+		            <ul class="about-list-block__list">
+		                <li class="about-list-block__item about-list-block__item--order">Выполнение заказа<br>«под ключ»</li>
+		                <li class="about-list-block__item about-list-block__item--reputation">Репутация, гарантированная<br>10 летним опытом</li>
+		                <li class="about-list-block__item about-list-block__item--professional">Профессиональные<br>консультации</li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="services">
+		    <div class="container">
+		        <div class="services-title">
+		            <h4 class="services-title__text">Пакеты услуг</h4>
+		        </div>
+		        <div class="services-list-block">
+		            <ul class="services-list-block__list">
+		                <li class="services-list-block__item">
+		                    <a href="#" class="services-list-block__link" title="Базовый">
+		                        <img class="services-list-block__img" src="img/services/basic.jpg" alt="basict">
+		                        <div class="services-list-block__wrapper">
+		                            <h5 class="services-list-block__title">Базовый</h5>
+		                            <div class="services-list-block__text">Покупка на аукционе</div>
+		                            <div class="services-list-block__text">Доставка в порт</div>
+		                            <div class="services-list-block__text">Доставка до Клайпеды или Минска</div>
+		                        </div>
+		                    </a>
+		                </li>
+		                <li class="services-list-block__item">
+		                    <a href="#" class="services-list-block__link" title="Расширенный">
+		                        <img class="services-list-block__img" src="img/services/extended.jpg" alt="extended">
+		                        <div class="services-list-block__wrapper">
+		                            <h5 class="services-list-block__title">Расширенный</h5>
+		                            <div class="services-list-block__text">Покупка на аукционе</div>
+		                            <div class="services-list-block__text">Доставка на нашу площадку</div>
+		                            <div class="services-list-block__text">Дефектовка</div>
+		                            <div class="services-list-block__text">Комплектация з/ч (при необходимости)</div>
+		                            <div class="services-list-block__text">Доставка до Минска</div>
+		                        </div>
+		                    </a>
+		                </li>
+		                <li class="services-list-block__item">
+		                    <a href="#" class="services-list-block__link" title="Под ключ">
+		                        <img class="services-list-block__img" src="img/services/full-construction.jpg" alt="full construction">
+		                        <div class="services-list-block__wrapper">
+		                            <h5 class="services-list-block__title">Под ключ</h5>
+		                            <div class="services-list-block__text">вы получаете автомобиль, готовый к постановке на учет</div>
+		                        </div>
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="objects">
+		    <div class="container">
+		        <div class="objects-title">
+		            <h3 class="objects-title__text">Наша работа</h3>
+		        </div>
+		        <div class="objects-list-block">
+		            <ul class="objects-list-block__list">
+		                <li class="objects-list-block__item">
+		                    <img class="objects-list-block__img" src="img/delete.jpg" alt="Продукт-1">
+		                    <div class="objects-info">
+		                        <div class="objects-info-description">
+		                            <h6 class="objects-info-description__title">Ford Fusion 2016</h6>
+		                            <p class="objects-info-description__text">пробег 10271</p>
+		                            <p class="objects-info-description__price">Итоговая цена<span class="objects-info-description__value">5600</span></p>
+		                        </div>
+		                        <div class="objects-info-more">
+		                            <a href="item.html" class="objects-info-more__link">Подробнее</a>
+		                        </div>
+		                    </div>
+		                </li>
+		                <li class="objects-list-block__item">
+		                    <img class="objects-list-block__img" src="img/delete.jpg" alt="Продукт-2">
+		                    <div class="objects-info">
+		                        <div class="objects-info-description">
+		                            <h6 class="objects-info-description__title">Ford Fusion 2016</h6>
+		                            <p class="objects-info-description__text">пробег 10271</p>
+		                            <p class="objects-info-description__price">Итоговая цена<span class="objects-info-description__value">5600</span></p>
+		                        </div>
+		                        <div class="objects-info-more">
+		                            <a href="item.html" class="objects-info-more__link">Подробнее</a>
+		                        </div>
+		                    </div>
+		                </li>
+		                <li class="objects-list-block__item">
+		                    <img class="objects-list-block__img" src="img/delete.jpg" alt="Продукт-3">
+		                    <div class="objects-info">
+		                        <div class="objects-info-description">
+		                            <h6 class="objects-info-description__title">Ford Fusion 2016</h6>
+		                            <p class="objects-info-description__text">пробег 10271</p>
+		                            <p class="objects-info-description__price">Итоговая цена<span class="objects-info-description__value">5600</span></p>
+		                        </div>
+		                        <div class="objects-info-more">
+		                            <a href="item.html" class="objects-info-more__link">Подробнее</a>
+		                        </div>
+		                    </div>
+		                </li>
+		            </ul>
+		        </div>
+		        <div class="objects-all-job">
+		            <a href="list.html" class="objects-all-job__link">Больше работ</a>
+		        </div>
+		    </div>
+		</div>
+		
+		<footer class="footer" id="footer">
+		    <div class="footer-info">
+		        <div class="container">
+		            <div class="footer-wrapper">
+		                <div class="footer-block-adress">
+		                    <div class="footer-title">
+		                        <h5 class="footer-title__text">«АвтоТехИмпорт»</h5>
+		                    </div>
+		                    <div class="footer-adress">
+		                        <p class="footer-adress__text">ООО «АвтоТехИмпорт»:</p>
+		                        <p class="footer-adress__text">220114 Республика Беларусь,</p>
+		                        <p class="footer-adress__text">г. Минск, ул. Кедышко, 26Б, ком.306</p>
+		                    </div>
+		                    <div class="footer-tel">
+		                        <a href="tel:+375296430307" class="footer-tel__link" title="+375297030307">+375 (29) <span class="footer-tel__link--bold">634-03-07</span></a>
+		                        <a href="tel:+375297030307" class="footer-tel__link" title="+375297030307">+375 (29) <span class="footer-tel__link--bold">703-03-07</span></a>
+		                        <a href="tel:+375291177770" class="footer-tel__link" title="+375297030307">+375 (29) <span class="footer-tel__link--bold">117-77-70</span></a>
+		                    </div>
+		                    <div class="footer-social">
+		                        <a href="https://web.facebook.com/xcarsby/" target="_blank" class="footer-social__link footer-social__link--facebook"><i class="fab fa-facebook"></i></a>
+		                        <a href="https://www.instagram.com/xcars.by/" target="_blank" class="footer-social__link footer-social__link--instagram"><i class="fab fa-instagram"></i></a>
+		                    </div>
+		                </div>
+		                <div class="footer-block-form">
+		                    <div class="footer-form">
+		                        <form action="POST" class="footer-form__form">
+		                            <h6 class="footer-form__title">Связаться с нами</h6>
+		                            <input type="text" placeholder="Имя" name="name" id="name" title="Имя" required="required" class="footer-form__input">
+		                            <input type="tel" placeholder="+ 375 ( _ ) __-___-__" name="tel" id="tel" title="+ 375 ( _ ) __-___-__" required="required" class="footer-form__input">
+		                            <input type="text" placeholder="Интересующий а/м и бюджет" name="message" id="message" title="Интересующий а/м и бюджет" required="required" class="footer-form__input">
+		                            <p class="footer-form__text">*Пожалуйста, заполните указанную информацию, чтобы мы скорее смогли вам помочь.</p>
+		                            <input type="submit" name="submit" title="Отправить" class="footer-form__submit" value="Отправить">
+		                        </form>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="footer-map" id="map"></div>
+		</footer>
 		<!-- build:js js/vendor.min.js -->
 		<!-- bower:js -->
 		<script src="vendor/jquery/dist/jquery.js"></script>
@@ -153,6 +327,12 @@
 		<!-- build:js js/common.min.js -->
 		<script type="text/javascript" src="js/common.js"></script>
 		<!-- endbuild -->
+		<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script type="text/javascript">
+            ymaps.ready(function(){
+                MapYandex.init();
+            });
+		</script>
 
 	</body>
 </html>

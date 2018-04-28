@@ -12,7 +12,7 @@
 
 html {
   font-family: $GothamPro;
-  font-size: $font-18;
+  font-size: $font-18-stack;
 }
 
 body {
@@ -34,9 +34,17 @@ body {
   margin: 0 auto;
 }
 
+.body-hidden {
+  overflow: hidden !important;
+}
+
 /* @IMPORT
  ========================= */
 @import "sections/_header";
 @import "sections/_work";
+@import "sections/_result";
+@import "sections/_about";
+@import "sections/_services";
+@import "sections/_objects";
+@import "sections/_content";
 @import "sections/_footer";
-@import "helpers/_media";

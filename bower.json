@@ -36,6 +36,7 @@
     }
   },
   "devDependencies": {
-    "owl.carousel": "OwlCarousel2#^2.3.3"
+    "owl.carousel": "OwlCarousel2#^2.3.3",
+    "fontAwesome": "^5.0.10"
   }
 }

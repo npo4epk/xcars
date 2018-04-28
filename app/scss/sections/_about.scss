@@ -1,0 +1,130 @@
+/* @IMPORT */
+@import "../components/_variables";
+@import "../helpers/_mixins";
+
+.about {
+  position: relative;
+  display: block;
+  background-color: $color-ffffff;
+  padding: 80px 0;
+
+  &-title {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &__text {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-36, $font-18-overall);
+      @include rem(lh, $font-38, $font-18-overall);
+      font-weight: normal;
+      margin: 0;
+      color: $color-332512;
+    }
+  }
+
+  &-description {
+    position: relative;
+    display: block;
+    margin: 0 10% 50px 10%;
+    text-align: center;
+
+    &__text {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-18, $font-18-overall);
+      @include rem(lh, $font-26, $font-18-overall);
+      font-weight: normal;
+      margin: 0;
+      color: $color-0e1011;
+    }
+  }
+
+  &-list-block {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      @include list-clear();
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-18, $font-18-overall);
+      @include rem(lh, $font-26, $font-18-overall);
+      font-family: $GothamPro-Medium;
+      padding-top: 150px;
+      color: $color-2d3238;
+      text-align: center;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url('../img/spritesheet.png');
+        margin: auto;
+      }
+
+      &--order:after {
+        width: 82px;
+        height: 97px;
+        background-position: -5px -343px;
+      }
+
+      &--reputation:after {
+        width: 108px;
+        height: 108px;
+        background-position: -5px -450px;
+      }
+
+      &--professional:after {
+        width: 107px;
+        height: 82px;
+        background-position: -5px -568px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : $size-700) {
+
+  .about {
+
+    &-title {
+
+      &__text {
+        @include rem(fs, $font-26, $font-18-overall);
+        @include rem(lh, $font-36, $font-18-overall);
+      }
+    }
+
+    &-description {
+      margin: 0 0 50px 0;
+    }
+
+    &-list-block {
+
+      &__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__item {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+}

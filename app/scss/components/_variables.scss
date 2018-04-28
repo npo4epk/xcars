@@ -4,7 +4,8 @@ $color-ffffff: #ffffff;
 $color-2d3238: #2d3238;
 $color-332512: #332512;
 $color-d10c1d: #d10c1d;
-
+$color-878889: #878889;
+$color-f6f6f6: #f6f6f6;
 
 
 /* FONTS */
@@ -16,19 +17,30 @@ $GothamPro-Medium: 'GothamPro-Medium', sans-serif;
 
 
 /* SIZES */
+$font-18-stack: 18px;
 $font-18-overall: 18;
+$font-12: 12;
 $font-14: 14;
 $font-16: 16;
 $font-18: 18;
 $font-20: 20;
+$font-26: 26;
+$font-36: 36;
+$font-38: 38;
+$font-46: 46;
 $font-55: 55;
 $font-65: 65;
 
 
 
 /* MEDIA SIZES */
-$phone: 320px; //_media.scss
-$phone-landscape: 480px; //_media.scss
-$tablet: 768px; //_media.scss
-$desktop: 992px; //_media.scss
-$site: 1280px; //_media.scss
+$size-1600: 1600px;
+$size-1400: 1400px;
+$size-1200: 1200px;
+$size-1000: 1000px;
+$size-900:  900px;
+$size-800:  800px;
+$size-750:  750px;
+$size-700:  700px;
+$size-450:  450px;
+$size-400:  400px;

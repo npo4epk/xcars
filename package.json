@@ -24,8 +24,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^1.5.3",
-    "gulp-useref": "^3.1.2",
-    "gulp.spritesmith": "^6.3.0",
+    "gulp-useref": "^3.1.2"
     "wiredep": "^4.0.0"
   }
 }

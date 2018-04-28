@@ -1,0 +1,113 @@
+/* @IMPORT */
+@import "../components/_variables";
+@import "../helpers/_mixins";
+
+.result {
+  position: relative;
+  display: block;
+  background-image: linear-gradient(to top, #020403, #141719, #1e2123, #2f373e, #324049);
+  padding: 80px 0;
+
+  &-title {
+    position: relative;
+    display: block;
+    margin-bottom: 60px;
+    text-align: center;
+
+    &__text {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-36, $font-18-overall);
+      @include rem(lh, $font-38, $font-18-overall);
+      font-weight: normal;
+      margin: 0;
+      color: $color-ffffff;
+    }
+  }
+
+  &-list-block {
+    position: relative;
+    display: block;
+
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      @include list-clear();
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+      @include rem(fs, $font-18, $font-18-overall);
+      @include rem(lh, $font-26, $font-18-overall);
+      font-family: $GothamPro-Medium;
+      padding-top: 150px;
+      color: $color-ffffff;
+      text-align: center;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url('../img/spritesheet.png');
+        margin: auto;
+      }
+
+      &--maintenance:after {
+        width: 97px;
+        height: 98px;
+        background-position: -5px -5px;
+      }
+
+      &--delivery:after {
+        width: 108px;
+        height: 108px;
+        background-position: -5px -113px;
+      }
+
+      &--transportation:after {
+        width: 102px;
+        height: 102px;
+        background-position: -5px -231px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : $size-750) {
+
+  .result {
+
+    &-title {
+
+      &__text {
+        @include rem(fs, $font-26, $font-18-overall);
+        @include rem(lh, $font-36, $font-18-overall);
+      }
+    }
+
+    &-description {
+      margin: 0 0 50px 0;
+    }
+
+    &-list-block {
+
+      &__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__item {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+}
